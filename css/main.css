@@ -1,0 +1,132 @@
+@import url(./font.css);
+
+/* CUSTOM PROPS */
+:root {
+    --white: #fff;
+    --Neon-Green: #C4F82A;
+    --Grey: #333;
+    --black: #141414;
+    --Dark-Grey: #1F1F1F;
+    --Inter: "Inter";
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scrollbar-width: smooth;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+
+}
+
+/* Global Styles */
+.portfolio__card {
+    width: 384px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Grey);
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.card-image {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+
+
+
+.portfolio__name-map {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.name {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--Inter);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.map {
+    text-align: center;
+}
+
+.mapps {
+    color: var(--Neon-Green);
+    font-family: var(--Inter);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.direction {
+    color: var(--white);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--Inter);
+    line-height: 21px;
+}
+
+.portfolion-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.button {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--Grey);
+    border: none;
+    width: 304px;
+    transition: .8s;    
+}
+
+.button-link {
+    color: var(--white);
+    font-family: var(--Inter);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;  
+}
+.button:active {
+    background-color: var(--Neon-Green);    
+}
+.button:active .button-link{
+    color: var(--Grey);
+}
+
+.button:hover{
+    cursor: pointer;
+}
