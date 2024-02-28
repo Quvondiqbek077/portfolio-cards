@@ -58,9 +58,13 @@ body {
  justify-content: center;
  align-items: center;
 
+
 }
-
-
+.images{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
 
 .portfolio__name-map {
     display: flex;

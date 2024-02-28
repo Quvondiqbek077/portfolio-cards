@@ -1,0 +1,17 @@
+@media(max-width:375px) {
+    
+    body{
+        display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    }
+    
+    
+    .portfolio__card{
+        width: 327px;
+        padding: 24px;
+    }
+}
